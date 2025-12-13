@@ -5,6 +5,6 @@ class Solution:
         #     if i%2==1:
         #         count+=1
         # return count
-        odds_up_to_high = (high + 1) >> 1
+        odds_up_high = (high + 1) >> 1
         odds_before_low = low >> 1
-        return odds_up_to_high - odds_before_low
+        return odds_up_high - odds_before_low
