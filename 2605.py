@@ -19,6 +19,6 @@ class Solution:
             if i in nums2:
                 return i
         if nums1[0] < nums2[0]:
-            return int(str(nums1[0])+str(nums2[0])) 
+            return int(str(nums1[0])+str(nums2[0]))     #10*nums1[0]+nums2[0] because 10 place in nums1[0]
         else:
-            return int(str(nums2[0])+str(nums1[0]))
+            return int(str(nums2[0])+str(nums1[0]))     #10*nums2[0]+nums1[0] because 10 place in nums2[0]
