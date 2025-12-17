@@ -9,3 +9,16 @@ class Solution:
                     min_val = min(min_val,10*i+j,10*j+i)
         return min_val
 
+
+
+class Solution:
+    def minNumber(self, nums1: List[int], nums2: List[int]) -> int:
+        nums1.sort()
+        nums2.sort()
+        for i in nums1:
+            if i in nums2:
+                return i
+        if nums1[0] < nums2[0]:
+            return int(str(nums1[0])+str(nums2[0])) 
+        else:
+            return int(str(nums2[0])+str(nums1[0]))
